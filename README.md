@@ -1,2 +1,4 @@
-# Module-1-HTML-CSS-E-Commerce
-Module 1 HTML CSS  E Commerce
+# Module_2_HTML-CSS
+Module_2_HTML-CSS
+
+https://get.foundation/building-blocks/blocks/ecommerce-product-slider.html

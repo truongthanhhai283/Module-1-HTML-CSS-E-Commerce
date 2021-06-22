@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/slideshow.css">
+    <link rel="stylesheet" href="./assets/css/productslide.css">
+    <link rel="stylesheet" href="./assets/css/nav_menu.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/fontawesome-free-5.13.1-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <title>Module 2 HTML - CSS</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div> -->
+
+    <div id="wrapper">
+        <header id="header">
+            <div id="header_top">
+                <div class="grid wide">
+                    <div class="row no-gutters" id="header_top__wrapper">
+                        <div class="col l-7">
+                            <div class="header_top__wrapper__logo-search-box">
+                                <div class="mobile-search-checkbox_content">
+                                    <label for="mobile-search-checkbox" class="header_mobile__search show-on-mobile">
+                                        <i class="fas fa-search header__mobile-search-icon"></i>
+                                    </label>
+                                </div>
+
+                                <input type="checkbox" hidden id="mobile-search-checkbox"
+                                    class="header__search-checkbox">
+
+
+                                    <img src="./assets/img/social_signup/logo.png" alt="" id="header_top__logo" class="">
+
+
+                                <div class="header_top__search-box col c-0 l-8">
+                                    <form class="header_top__search-box-form" action="#">
+                                        <input type="text"
+                                            placeholder="Nhập tên sản phẩm, mã sản phẩm, từ khóa cần tìm..."
+                                            name="search2">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+
+                                        <div class="header_top__search-box-form-hotkey">
+                                            <p>TỪ KHÓA HOT</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- <div class="header_mobile__cart-box">
+                                <label for="checked_cart-box-content" class="checked_cart-box-content-label"><i
+                                        class="fa fa-shopping-cart"><span class="show-on-mobile--modify">1</span></i>
+                                </label>
+                            </div> -->
+
+                            <input type="checkbox" hidden id="checked_cart-box-content">
+
+                            <!-- cart content -->
+                            <div class="header_mobile__cart-box-content">
+                                <h4 class="header_mobile__cart-box-content__text">Sản phẩm đã thêm</h4>
+                                <ul class="header_mobile__cart-box-content__list">
+                                    <li class="header_mobile__cart-box-content__list__item">
+                                        <img src="https://vn-test-11.slatic.net/shop/5b98bc93d7cae009271314e4a1b1e7be.jpeg"
+                                            alt="" class="header_mobile__cart-box-content__list__item-img">
+                                        <div class="header_mobile__cart-box-content__list__item-info">
+                                            <div class="header_mobile__cart-box-content__list__item-head">
+                                                <h5 class="header_mobile__cart-box-content__list__item-name">Hải sản
+                                                </h5>
+                                                <div class="header_mobile__cart-box-content__list__item-price-wrap">
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-price">200.000đ</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-multiply">x</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_mobile__cart-item-body">
+                                                <span class="header_mobile__cart-item-desciption">Phân loại: Hải
+                                                    sản</span>
+
+                                                <span class="header_mobile__cart-item-remove"><i
+                                                        class="far fa-trash-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header_mobile__cart-box-content__list__item">
+                                        <img src="https://vn-test-11.slatic.net/shop/5b98bc93d7cae009271314e4a1b1e7be.jpeg"
+                                            alt="" class="header_mobile__cart-box-content__list__item-img">
+                                        <div class="header_mobile__cart-box-content__list__item-info">
+                                            <div class="header_mobile__cart-box-content__list__item-head">
+                                                <h5 class="header_mobile__cart-box-content__list__item-name">Hải sản
+                                                </h5>
+                                                <div class="header_mobile__cart-box-content__list__item-price-wrap">
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-price">200.000đ</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-multiply">x</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_mobile__cart-item-body">
+                                                <span class="header_mobile__cart-item-desciption">Phân loại: Hải
+                                                    sản</span>
+
+                                                <span class="header_mobile__cart-item-remove"><i
+                                                        class="far fa-trash-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header_mobile__cart-box-content__list__item">
+                                        <img src="https://vn-test-11.slatic.net/shop/5b98bc93d7cae009271314e4a1b1e7be.jpeg"
+                                            alt="" class="header_mobile__cart-box-content__list__item-img">
+                                        <div class="header_mobile__cart-box-content__list__item-info">
+                                            <div class="header_mobile__cart-box-content__list__item-head">
+                                                <h5 class="header_mobile__cart-box-content__list__item-name">Hải sản
+                                                </h5>
+                                                <div class="header_mobile__cart-box-content__list__item-price-wrap">
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-price">200.000đ</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-multiply">x</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_mobile__cart-item-body">
+                                                <span class="header_mobile__cart-item-desciption">Phân loại: Hải
+                                                    sản</span>
+
+                                                <span class="header_mobile__cart-item-remove"><i
+                                                        class="far fa-trash-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header_mobile__cart-box-content__list__item">
+                                        <img src="https://vn-test-11.slatic.net/shop/5b98bc93d7cae009271314e4a1b1e7be.jpeg"
+                                            alt="" class="header_mobile__cart-box-content__list__item-img">
+                                        <div class="header_mobile__cart-box-content__list__item-info">
+                                            <div class="header_mobile__cart-box-content__list__item-head">
+                                                <h5 class="header_mobile__cart-box-content__list__item-name">Hải sản
+                                                </h5>
+                                                <div class="header_mobile__cart-box-content__list__item-price-wrap">
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-price">200.000đ</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-multiply">x</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_mobile__cart-item-body">
+                                                <span class="header_mobile__cart-item-desciption">Phân loại: Hải
+                                                    sản</span>
+
+                                                <span class="header_mobile__cart-item-remove"><i
+                                                        class="far fa-trash-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header_mobile__cart-box-content__list__item">
+                                        <img src="https://vn-test-11.slatic.net/shop/5b98bc93d7cae009271314e4a1b1e7be.jpeg"
+                                            alt="" class="header_mobile__cart-box-content__list__item-img">
+                                        <div class="header_mobile__cart-box-content__list__item-info">
+                                            <div class="header_mobile__cart-box-content__list__item-head">
+                                                <h5 class="header_mobile__cart-box-content__list__item-name">Hải sản
+                                                </h5>
+                                                <div class="header_mobile__cart-box-content__list__item-price-wrap">
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-price">200.000đ</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-multiply">x</span>
+                                                    <span
+                                                        class="header_mobile__cart-box-content__list__item-qnt">2</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_mobile__cart-item-body">
+                                                <span class="header_mobile__cart-item-desciption">Phân loại: Hải
+                                                    sản</span>
+
+                                                <span class="header_mobile__cart-item-remove"><i
+                                                        class="far fa-trash-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <a href="#" class="header_mobile__cart-viewcart">Xem giỏ hàng</a>
+
+                                    <div style="clear: both;"></div>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col l-5 c-0">
+                            <ul class="header_top_right">
+                                <li class="header_top_right__user-box">
+                                    <i class="fas fa-user-circle"></i>
+                                    <div>
+                                        <p href="#">Đăng nhập</p>
+                                        <p href="#">Đăng ký</p>
+
+                                        <div class="sign-in__sign-up__wrapper">
+                                            <div class="sign-in__sign-up__list">
+                                                <a href="#"
+                                                    class="sign-in__sign-up__item sign-in__sign-up__item--sign-in">Đăng
+                                                    nhập</a>
+                                                <a href="#"
+                                                    class="sign-in__sign-up__item sign-in__sign-up__item--sign-up">Tạo
+                                                    tài khoản</a>
+                                                <a href="#"
+                                                    class="sign-in__sign-up__item sign-in__sign-up__item--sign-in-fb">
+                                                    <div class="sign-in__sign-up__item__wrapper"><img
+                                                            class="sign-in__sign-up__item__wrapper__img"
+                                                            src="./assets/img/social_signup/fb.png" alt="" srcset="">
+                                                        <span class="sign-in__sign-up__item__wrapper__text">Đăng nhập
+                                                            bằng Facebook</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#"
+                                                    class="sign-in__sign-up__item sign-in__sign-up__item--sign-in-gg">
+                                                    <div class="sign-in__sign-up__item__wrapper"><img
+                                                            class="sign-in__sign-up__item__wrapper__img"
+                                                            src="./assets/img/social_signup/gg.png" alt="" srcset="">
+                                                        <span class="sign-in__sign-up__item__wrapper__text"> Đăng
+                                                            nhập bằng Google</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#"
+                                                    class="sign-in__sign-up__item sign-in__sign-up__item--sign-in-zl">
+                                                    <div class="sign-in__sign-up__item__wrapper"><img
+                                                            class="sign-in__sign-up__item__wrapper__img"
+                                                            src="./assets/img/social_signup/zl.png" alt="" srcset="">
+
+                                                        <span class="sign-in__sign-up__item__wrapper__text"> Đăng
+                                                            nhập bằng Zalo</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="header_top_right__cart-box">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <div>
+                                        <p>Giỏ hàng của bạn (0) sản phẩm</p>
+                                    </div>
+                                </li>
+
+                                <li class="header_top_right__shipping_location-box">
+                                    <p>Khu vực giao hàng</p>
+                                    <p>Hà Nội</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="header_nav">
+                <div class="grid wide">
+                    <div id="header_nav__content">
+                        <div class="row no-gutters" id="header_nav__wrapper">
+                            <div class="col c-0 l-2">
+                                <ul class="header_nav__content__list">
+                                    <li class="header_nav__content__list__item">
+                                        <i class="fas fa-bars"></i>
+                                        <span>Danh mục sản phẩm</span>
+
+                                        <div id="header_nav__content__list__item__dropdown">
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Thịt -
+                                                Thủy
+                                                hải
+                                                sản - Trứng</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Dầu ăn
+                                                - Gia
+                                                vị -
+                                                Đồ khô</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Đồ
+                                                đông
+                                                lạnh/Mát
+                                                chế biến</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Sữa -
+                                                Sản phẩm
+                                                từ
+                                                sữa</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Đồ
+                                                uống - Giải
+                                                khát</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Bánh
+                                                kẹo - Đồ
+                                                ăn
+                                                vặt</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Hóa
+                                                phẩm -
+                                                Giấy</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Chăm
+                                                sóc cá
+                                                nhấn</a>
+                                            <a href="" class="header_nav__content__list__item__dropdown-link">Chăm
+                                                sóc cho
+                                                bé</a>
+                                            <div id="mainnav">
+                                                <ul>
+                                                    <li class="thefirst"><a href="#">Thịt - Thủy hải sản - Trứng <i
+                                                                class="fas fa-chevron-right arrow-submenu"></i></a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Item 1</a></li>
+                                                            <li><a href="#">Item 2 <i
+                                                                        class="fas fa-chevron-right arrow-submenu"></i></a>
+                                                                <ul class="sub-menu2">
+                                                                    <li><a href="#">item 1</a></li>
+                                                                    <li><a href="#">item 2</a></li>
+                                                                    <li><a href="#">item 3</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Item 4</a></li>
+                                                            <li><a href="#">Item 5</a></li>
+                                                            <li><a href="#">Item 6</a></li>
+                                                            <li><a href="#">Item 7</a></li>
+                                                            <li><a href="#">Item 8</a></li>
+                                                            <li><a href="#">Item 9 <i
+                                                                        class="fas fa-chevron-right arrow-submenu"></i></a>
+                                                                <ul class="sub-menu2">
+                                                                    <li><a href="#"> item 1</a></li>
+                                                                    <li><a href="#"> item 2 <i
+                                                                                class="fas fa-chevron-right arrow-submenu"></i></a>
+                                                                        <ul class="sub-menu3">
+                                                                            <li><a href="#">item 1.a</a></li>
+                                                                            <li><a href="#">item 2.a</a></li>
+                                                                            <li><a href="#">item 3.a</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">item 3</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Đồ đông lạnh/Mát chế biến</a></li>
+                                                    <li><a href="#">Đồ uống - Giải khát</a></li>
+                                                    <li><a href="#">Hóa phẩm - Giấy</a></li>
+                                                    <li><a href="#">Chăm sóc cá nhấn</a></li>
+                                                    <li><a href="#">Chăm sóc cho bé</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <!-- <div id="nav__overlay"></div>       -->
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col c-0 l-5">
+                                <ul
+                                    class="header_nav__content__list header_nav__content__list--right header_nav__content__list--right--modify">
+                                    <li class="header_nav__content__list__item">
+
+                                        <label for="checked-see_product" id="checked-have_see_product"><i
+                                                class="fas fa-chevron-down"></i> Sản phẩm vừa xem</label>
+                                    </li>
+
+                                    <!-- checked none/has product -->
+                                    <input type="checkbox" hidden id="checked-see_product" class="checked-see_product">
+                                    <div class="header_nav__content__list__item__seen-product">
+                                        <img src="./assets/img/empty_cart.png" alt=""
+                                            class="header_nav__content__list__item__seen-product__empty-cart-image">
+                                        <p class="header_nav__content__list__item__seen-product__title">Không có sản
+                                            phẩm
+                                            nào.
+                                        </p>
+                                        <a href="#"><button
+                                                class="header_nav__content__list__item__shopping-coutinue">Tiếp
+                                                tục
+                                                mua hàng</button></a>
+                                    </div>
+
+                                    <div style="display:none"
+                                        class="header_nav__content__list__item__seen-product header_nav__content__list__item__seen-product--has-product"
+                                        id="header_nav__content__list__item__seen-product header_nav__content__list__item__seen-product--has-product">
+                                        <div class="grid wide">
+                                            <div class="row">
+                                                <div class="c-1">
+                                                    <div
+                                                        class="header_nav__content__list__item__seen-product--has-product__item">
+                                                        <img src="./assets/img/product/meal.jpg" alt=""
+                                                            class="header_nav__content__list__item__seen-product--has-product__image">
+                                                        <a href="#">
+                                                            <p
+                                                                class="header_nav__content__list__item__seen-product--has-product__title">
+                                                                Ba chỉ bò Úc Kiaora cắt lát 400g
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="c-1">
+                                                    <div
+                                                        class="header_nav__content__list__item__seen-product--has-product__item">
+                                                        <img src="./assets/img/product/vegetable.jpg" alt=""
+                                                            class="header_nav__content__list__item__seen-product--has-product__image">
+                                                        <a href="#">
+                                                            <p
+                                                                class="header_nav__content__list__item__seen-product--has-product__title">
+                                                                Ba chỉ bò Úc Kiaora cắt lát 400g
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="header_nav__content__list__item">
+                                        <a href="" class="header_nav__content__list__item---link">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Tin tức</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_nav__content__list__item">
+                                        <a href="" class="header_nav__content__list__item---link">
+                                            <i class="fas fa-info-circle"></i>
+                                            <span>Tư vấn mua hàng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col c-12 m-12 l-0">
+                                <section>
+                                    <div class="row no-gutters">
+                                        <div class="col c-12">
+
+                                            <input type="checkbox" id="op"></input>
+                                            <div class="lower">
+                                                <label for="op"><i class="fas fa-bars"></i></label>
+                                            </div>
+                                            <div class="overlay overlay-hugeinc">
+                                                <nav>
+                                                    <label for="op"><i class="fas fa-times"></i></label>
+                                                    <ul class="overlay overlay-hugeinc--modify-text">
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-home overlay-hugeinc--modify-icon"></i>
+                                                                Trang chủ</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-list-ul overlay-hugeinc--modify-icon"></i>
+                                                                Danh mục</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-user-friends overlay-hugeinc--modify-icon"></i>
+                                                                Đăng ký/Đăng nhập</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-shopping-basket overlay-hugeinc--modify-icon"></i>
+                                                                Giỏ hàng</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-info-circle overlay-hugeinc--modify-icon"></i>
+                                                                Sản phẩm vừa xem</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-info-circle overlay-hugeinc--modify-icon"></i>
+                                                                Tin tức</a></li>
+
+                                                        <li><a href="#"><i
+                                                                    class="fas fa-info-circle overlay-hugeinc--modify-icon"></i>
+                                                                Tư vấn bán hàng</a></li>
+                                                        <li>
+
+                                                            <form>
+                                                                <input class="overlay-hugeinc__input" type="text"
+                                                                    name="search" placeholder="Tìm kiếm..">
+                                                            </form>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header_nav__content__list__item__seen-product">
+                <img src="./assets/img/empty_cart.png" alt=""
+                    class="header_nav__content__list__item__seen-product__empty-cart-image">
+                <p class="header_nav__content__list__item__seen-product__title">Không có sản phẩm nào.</p>
+                <button class="header_nav__content__list__item__shopping-coutinue">Tiếp tục mua hàng</button>
+            </div>
+
+            <div
+                class="header_nav__content__list__item__seen-product header_nav__content__list__item__seen-product--has-product">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="c-1">
+                            <div class="header_nav__content__list__item__seen-product--has-product__item">
+                                <img src="./assets/img/product/meal.jpg" alt=""
+                                    class="header_nav__content__list__item__seen-product--has-product__image">
+                                <a href="#">
+                                    <p class="header_nav__content__list__item__seen-product--has-product__title">
+                                        Ba chỉ bò Úc Kiaora cắt lát 400g
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-1">
+                            <div class="header_nav__content__list__item__seen-product--has-product__item">
+                                <img src="./assets/img/product/vegetable.jpg" alt=""
+                                    class="header_nav__content__list__item__seen-product--has-product__image">
+                                <a href="#">
+                                    <p class="header_nav__content__list__item__seen-product--has-product__title">
+                                        Ba chỉ bò Úc Kiaora cắt lát 400g
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="grid wide">
+            <div id="content mg-top-10">
+                <section class="content__slideshow">
+                    <div class="row no-gutters">
+                        <div class="col l-8 c-0 m-12">
+                            <div class="content__slidershow__left">
+                                <div class='slider'>
+                                    <input checked id='slide-1' name='active' type='radio'>
+                                    <div class='slide' data-content='1'></div>
+                                    <nav class='nav'>
+                                        <div class="nav__pre nav__button--next-pre">
+                                            <label class='prev' for='slide-4'><i
+                                                    class="fas fa-chevron-left"></i></label>
+                                        </div>
+
+                                        <div class="nav__next nav__button--next-pre">
+                                            <label class='next' for='slide-2'><i
+                                                    class="fas fa-chevron-right"></i></label>
+                                        </div>
+                                    </nav>
+                                    <nav class='dots'>
+                                        <label class='dot' for='slide-1'></label>
+                                        <label class='dot' for='slide-2'></label>
+                                        <label class='dot' for='slide-3'></label>
+                                        <label class='dot' for='slide-4'></label>
+                                    </nav>
+                                    <input id='slide-2' name='active' type='radio'>
+                                    <div class='slide' data-content='2'></div>
+                                    <nav class='nav'>
+                                        <div class="nav__pre nav__button--next-pre">
+                                            <label class='prev' for='slide-1'><i
+                                                    class="fas fa-chevron-left"></i></label>
+                                        </div>
+                                        <div class="nav__next nav__button--next-pre">
+                                            <label class='next' for='slide-3'><i
+                                                    class="fas fa-chevron-right"></i></label>
+                                        </div>
+                                    </nav>
+                                    <nav class='dots'>
+                                        <label class='dot' for='slide-1'></label>
+                                        <label class='dot' for='slide-2'></label>
+                                        <label class='dot' for='slide-3'></label>
+                                        <label class='dot' for='slide-4'></label>
+                                    </nav>
+                                    <input id='slide-3' name='active' type='radio'>
+                                    <div class='slide' data-content='3'></div>
+                                    <nav class='nav'>
+                                        <div class="nav__pre nav__button--next-pre">
+                                            <label class='prev' for='slide-2'><i
+                                                    class="fas fa-chevron-left"></i></label>
+                                        </div>
+                                        <div class="nav__next nav__button--next-pre">
+                                            <label class='next' for='slide-4'><i
+                                                    class="fas fa-chevron-right"></i></label>
+                                        </div>
+                                    </nav>
+                                    <nav class='dots'>
+                                        <label class='dot' for='slide-1'></label>
+                                        <label class='dot' for='slide-2'></label>
+                                        <label class='dot' for='slide-3'></label>
+                                        <label class='dot' for='slide-4'></label>
+                                    </nav>
+                                    <input id='slide-4' name='active' type='radio'>
+                                    <div class='slide' data-content='4'></div>
+                                    <nav class='nav'>
+                                        <div class="nav__pre nav__button--next-pre">
+                                            <label class='prev' for='slide-3'><i
+                                                    class="fas fa-chevron-left"></i></label>
+                                        </div>
+                                        <div class="nav__next nav__button--next-pre">
+                                            <label class='next' for='slide-1'><i
+                                                    class="fas fa-chevron-right"></i></label>
+                                        </div>
+                                    </nav>
+                                    <nav class='dots'>
+                                        <label class='dot' for='slide-1'></label>
+                                        <label class='dot' for='slide-2'></label>
+                                        <label class='dot' for='slide-3'></label>
+                                        <label class='dot' for='slide-4'></label>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col l-4 c-0 m-0">
+                            <div class="content__slidershow__right">
+                                <img src="./assets/img/slides/2.jpeg" alt="" srcset=""
+                                    class="content__slidershow__right__image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content__product-hot-new">
+                    <div class="content__product-hot-new__top">
+                        <div class="content__product-hot-new__top--left content__product-hot-new__top__item">
+                            <p class="content__product-hot-new__top__text">Giá sốc</p>
+                            <div class="blob yellow"></div>
+                            <p class="content__product-hot-new__top__text">Hôm nay</p>
+                        </div>
+
+                        <div class="content__product-hot-new__top--right content__product-hot-new__top__item">
+                            <div class="content__product-hot-new__top--right__time-limit">
+                                <a href="">
+                                    <span class="content__product-hot-new__top--right__time-limit--num">03</span> <span
+                                        class="content__product-hot-new__top--right__time-limit--modify">:</span>
+                                    <span class="content__product-hot-new__top--right__time-limit--num">11</span> <span
+                                        class="content__product-hot-new__top--right__time-limit--modify">:</span>
+                                    <span class="content__product-hot-new__top--right__time-limit--num">10</span>
+                                    <i
+                                        class="fas fa-angle-right content__product-hot-new__top--right__time-limit--modify"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__product-hot-new__bottom">
+                        <div class="row no-gutters" id="content__product-hot-new__bottom__wrapper">
+                            <a href="#" class="content__product-hot-new__bottom__item--link">
+                                <div class="content__product-hot-new__bottom__item">
+                                    <div class="content__product-hot-new__bottom__item__image">
+                                        <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                    </div>
+    
+                                    <div class="pd-10">    
+                                        <div class="content__product-hot-new__bottom__item__sold mg-top-bottom-4">                                               
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <span class="content__product-hot-new__bottom__item__sold__price">2.900.000 đ</span>
+                                            </div>
+
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <div class="w3-light-grey content__product-hot-new__bottom__item__sold__process">
+                                                    <div id="progressbar">
+                                                        <span>Vừa mở bán</span>
+                                                        <div></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="content__product-hot-new__bottom__item--link">
+                                <div class="content__product-hot-new__bottom__item">
+                                    <div class="content__product-hot-new__bottom__item__image">
+                                        <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                    </div>
+    
+                                    <div class="pd-10">    
+                                        <div class="content__product-hot-new__bottom__item__sold mg-top-bottom-4">                                               
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <span class="content__product-hot-new__bottom__item__sold__price">2.900.000 đ</span>
+                                            </div>
+
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <div class="w3-light-grey content__product-hot-new__bottom__item__sold__process">
+                                                    <div id="progressbar">
+                                                        <span>Vừa mở bán</span>
+                                                        <div></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="content__product-hot-new__bottom__item--link">
+                                <div class="content__product-hot-new__bottom__item">
+                                    <div class="content__product-hot-new__bottom__item__image">
+                                        <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                    </div>
+    
+                                    <div class="pd-10">    
+                                        <div class="content__product-hot-new__bottom__item__sold mg-top-bottom-4">                                               
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <span class="content__product-hot-new__bottom__item__sold__price">2.900.000 đ</span>
+                                            </div>
+
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <div class="w3-light-grey content__product-hot-new__bottom__item__sold__process">
+                                                    <div id="progressbar">
+                                                        <span>Vừa mở bán</span>
+                                                        <div></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="content__product-hot-new__bottom__item--link">
+                                <div class="content__product-hot-new__bottom__item">
+                                    <div class="content__product-hot-new__bottom__item__image">
+                                        <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                    </div>
+    
+                                    <div class="pd-10">    
+                                        <div class="content__product-hot-new__bottom__item__sold mg-top-bottom-4">                                               
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <span class="content__product-hot-new__bottom__item__sold__price">2.900.000 đ</span>
+                                            </div>
+
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <div class="w3-light-grey content__product-hot-new__bottom__item__sold__process">
+                                                    <div id="progressbar">
+                                                        <span>Vừa mở bán</span>
+                                                        <div></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="content__product-hot-new__bottom__item--link">
+                                <div class="content__product-hot-new__bottom__item">
+                                    <div class="content__product-hot-new__bottom__item__image">
+                                        <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                    </div>
+    
+                                    <div class="pd-10">    
+                                        <div class="content__product-hot-new__bottom__item__sold mg-top-bottom-4">                                               
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <span class="content__product-hot-new__bottom__item__sold__price">2.900.000 đ</span>
+                                            </div>
+
+                                            <div
+                                                class="content__product-hot-new__bottom__item__sold">
+                                                <div class="w3-light-grey content__product-hot-new__bottom__item__sold__process">
+                                                    <div id="progressbar">
+                                                        <span>Vừa mở bán</span>
+                                                        <div></div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content__icon_services">
+                    <div class="row no-gutters" id="content__icon_services__wrapper">
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/1.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/2.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Giảm đến 50%</span>
+                        </a>
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/3.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Dịch vụ & Tiện ích</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/4.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Đi chợ online</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/5.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Free Ship</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/6.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Hoàn tiền 15%</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/7.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Gói hội viên</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/8.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Coupon 50%</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/9.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Ưu đãi đối tác</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/10.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Ticketbox</span>
+                        </a>
+
+                        <a href="#" class="content__icon_services__item">
+                            <img src="./assets/img/img_adv_services/11.png" alt="" srcset=""
+                                class="content__icon_services__item__icon">
+                            <span c;ass="content__icon_services__item__text">Ticketbox</span>
+                        </a>
+
+                    </div>
+                </section>
+
+                <section class="content__search__popular">
+                    <div class="content__search__popular__see-more">
+                        <h1 class="content__search__popular__text"><i class="fab fa-searchengin"></i> Tìm kiếm nổi bật
+                        </h1>
+                        <a href=""><i class="fas fa-sync-alt"></i> Xem thêm</a>
+                    </div>
+
+                    <div class="content__search__popular">
+                        <div class="row no-gutters" id="content__search__popular__wrapper">
+
+                            <a href="#" class="content__search__popular__wrapper__item">
+                                <div class="content__search__popular__wrapper__item__image-group">
+                                    <img src="./assets/img/img_ad/9.png" alt="" srcset=""
+                                        class="content__search__popular__wrapper__item__image-group__item">
+                                    <img src="./assets/img/img_ad/8.png" alt="" srcset=""
+                                        class="content__search__popular__wrapper__item__image-group__item">
+                                    <img src="./assets/img/img_ad/7.jpeg" alt="" srcset=""
+                                        class="content__search__popular__wrapper__item__image-group__item">
+                                </div>
+
+                                <div class="content__search__popular__wrapper__item__info">
+                                    <div class="content__search__popular__wrapper__item__info__name">
+                                        <p>Rong nho</p>
+                                    </div>
+
+                                    <div class="content__search__popular__wrapper__item__info__qnt">
+                                        <p><span>600</span> sản phẩm</p>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="content__search__popular__wrapper__item">
+                                <div class="content__search__popular__wrapper__item__image-group">
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/d5/77/50/fa8b0eba85ea1ea27e3fb4db67c4bd71.jpg"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/fe/29/50/6f08449bbeed2cf770a5b94167e3cd11.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/94/43/ec/4d7ae4d92fd08825a577ddc42088eb8a.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="content__search__popular__wrapper__item__info content__search__popular__wrapper__item__info--modify-1">
+                                    <div class="content__search__popular__wrapper__item__info__name">
+                                        <p>Rong nho</p>
+                                    </div>
+
+                                    <div class="content__search__popular__wrapper__item__info__qnt">
+                                        <p><span>600</span> sản phẩm</p>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="content__search__popular__wrapper__item">
+                                <div class="content__search__popular__wrapper__item__image-group">
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/d5/77/50/fa8b0eba85ea1ea27e3fb4db67c4bd71.jpg"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/fe/29/50/6f08449bbeed2cf770a5b94167e3cd11.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/94/43/ec/4d7ae4d92fd08825a577ddc42088eb8a.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="content__search__popular__wrapper__item__info content__search__popular__wrapper__item__info--modify-2">
+                                    <div class="content__search__popular__wrapper__item__info__name">
+                                        <p>Rong nho</p>
+                                    </div>
+
+                                    <div class="content__search__popular__wrapper__item__info__qnt">
+                                        <p><span>600</span> sản phẩm</p>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="content__search__popular__wrapper__item">
+                                <div class="content__search__popular__wrapper__item__image-group">
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/d5/77/50/fa8b0eba85ea1ea27e3fb4db67c4bd71.jpg"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/fe/29/50/6f08449bbeed2cf770a5b94167e3cd11.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+
+                                    <div>
+                                        <img src="https://salt.tikicdn.com/cache/280x280/ts/product/94/43/ec/4d7ae4d92fd08825a577ddc42088eb8a.png"
+                                            alt="" srcset=""
+                                            class="content__search__popular__wrapper__item__image-group__item">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="content__search__popular__wrapper__item__info content__search__popular__wrapper__item__info--modify-3">
+                                    <div class="content__search__popular__wrapper__item__info__name">
+                                        <p>Rong nho</p>
+                                    </div>
+
+                                    <div class="content__search__popular__wrapper__item__info__qnt">
+                                        <p><span>600</span> sản phẩm</p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content__suggest__today">
+                    <div class="content__category-hight-light__top">
+                        <h2 class="content__category-hight-light__wrapper__text">Gợi ý hôm nay</h2>
+                    </div>
+
+                    <div class="row no-gutters" id="content__suggest__today__wrapper">
+
+                        <a href="#" class="suggest__today__top__item suggest__today__top__item--active">
+                            <div class="suggest__today__top__item__content-img"> <img
+                                    src="./assets/img/suggest_today/1.png" class="suggest__today__top__item__img" />
+                            </div>
+                            <span>Dành cho bạn</span>
+                        </a>
+
+                        <a href="#" class="suggest__today__top__item">
+                            <div class="suggest__today__top__item__content-img"> <img
+                                    src="./assets/img/suggest_today/2.png" class="suggest__today__top__item__img" />
+                            </div>
+                            <span class="">Dành cho bạn</span>
+                        </a>
+
+                        <a href="#" class="suggest__today__top__item">
+                            <div class="suggest__today__top__item__content-img"> <img
+                                    src="./assets/img/suggest_today/1.png" class="suggest__today__top__item__img" />
+                            </div>
+                            <span>Dành cho bạn</span>
+                        </a>
+
+                        <a href="#" class="suggest__today__top__item">
+                            <div class="suggest__today__top__item__content-img"> <img
+                                    src="./assets/img/suggest_today/2.png" class="suggest__today__top__item__img" />
+                            </div>
+                            <span>Dành cho bạn</span>
+                        </a>
+
+                    </div>
+
+                    <div class="row no-gutters" id="suggest__today__bottom__item__wrapper">
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/1.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/7.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/6.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <p class="suggest__today__bottom__item__rating-price">60.900 đ</p>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/7.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/6.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/4.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/3.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/2.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/1.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/7.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/6.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <p class="suggest__today__bottom__item__rating-price">60.900 đ</p>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/7.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/6.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/5.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/4.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/3.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="suggest__today__bottom__item--link">
+                            <div class="suggest__today__bottom__item">
+                                <div class="suggest__today__bottom__item__image">
+                                    <img src="./assets/img/suggest_today/img/2.jpeg" alt="" srcset="">
+                                </div>
+
+                                <div class="pd-10">
+                                    <span class="suggest__today__bottom__item__tittle">Vải Thiều Lục Ngạn 3kg</span>
+
+                                    <div class="suggest__today__bottom__item__rating-count mg-top-bottom-4">
+                                        <div class="suggest__today__bottom__item__rating-count__item">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                        <div
+                                            class=" suggest__today__bottom__item__rating-count__item suggest__today__bottom__item__rating-count__item--modify">
+                                            <span class="suggest__today__bottom__item__rating--sold">Đã bán 1000+</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="suggest__today__bottom__item__price">
+                                        <span class="suggest__today__bottom__item__rating-price">60.900 đ</span>
+                                        <span class="suggest__today__bottom__item__rating-promotion">-30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="btn__see-more__content"><button class="btn__see-more">Xem thêm</button>
+                    </div>
+
+                </section>
+
+                <section class="content__category-hight-light">
+                    <div class="content__category-hight-light__top">
+                        <h2 class="content__category-hight-light__wrapper__text">Danh mục nổi bật</h2>
+                    </div>
+
+                    <div class="row no-gutters" id="content__category-hight-light__wrapper">
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/1.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Thực phẩm hữu cơ</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/1.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Trà</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/2.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Trang trí nhà cửa</span>
+                        </a>
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/3.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Nội thất</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/4.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/5.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/6.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/7.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/8.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/9.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/10.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/11.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/11.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                        <a href="#" class="content__category-hight-light__item">
+                            <img src="./assets/img/img_adv_services/11.png" alt="" srcset=""
+                                class="content__category-hight-light__item__icon">
+                            <span c;ass="content__category-hight-light__item__text">Mã giảm giá</span>
+                        </a>
+
+                    </div>
+                </section>
+
+                <section class="content__banner">
+                    <div class="row no-gutters" id="content__banner__wrapper">
+
+                        <a href="#" class="content__banner__item content__banner__item--modify">
+                            <img src="https://salt.tikicdn.com/cache/w295/ts/banner/7a/ce/47/e98ca3d009125b4034859bdb694bed8a.png.jpg"
+                                class="content__banner__item__img" />
+                        </a>
+
+                        <a href="#" class="content__banner__item content__banner__item--modify">
+                            <img src="https://salt.tikicdn.com/cache/w295/ts/banner/7a/ce/47/e98ca3d009125b4034859bdb694bed8a.png.jpg"
+                                class="content__banner__item__img" />
+                        </a>
+
+                        <a href="#" class="content__banner__item content__banner__item--modify">
+                            <img src="https://salt.tikicdn.com/cache/w295/ts/banner/7a/ce/47/e98ca3d009125b4034859bdb694bed8a.png.jpg"
+                                class="content__banner__item__img" />
+                        </a>
+
+                        <a href="#" class="content__banner__item content__banner__item--modify">
+                            <img src="https://salt.tikicdn.com/cache/w295/ts/banner/7a/ce/47/e98ca3d009125b4034859bdb694bed8a.png.jpg"
+                                class="content__banner__item__img" />
+                        </a>
+                    </div>
+                </section>
+
+                <section class="content__send-mail">
+                    <div class="row no-gutters" id="content__send-mail__wrapper">
+                        <div class="content__send-mail__item content__send-mail__item--icon">
+                            <img src="./assets/img/sent_mail/1.png" alt="" srcset=""
+                                class="content__send-mail__item--icon_img">
+                        </div>
+
+                        <div class="content__send-mail__item content__send-mail__item--desc">
+                            <h3 class="content__send-mail__desc__text-1">Đăng ký nhận bản tin tại đây</h3>
+
+                            <h5 class="content__send-mail__desc__text-2">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình
+                                siêu hấp dẫn
+                            </h5>
+                        </div>
+
+                        <div class="content__send-mail__item content__send-mail__item--form">
+                            <div class="wrap">
+                                <div class="search">
+                                    <input type="text" class="searchTerm"
+                                        placeholder="Nhập email để nhận bản tin tại đây">
+                                    <button type="submit" class="searchButton">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                </section>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <section id="footer__top--modify">
+                <div class="grid wide" id="footer__top">
+                    <div class="row no-gutters">
+                        <div class="col c-6 l-3 m-6">
+                            <div class="footer__top__content">
+                                <div class="footer__top__content--modify">
+                                    <img class="footer__top__content__image" src="./assets/img/footer/top/1.png" alt=""
+                                        srcset="">
+                                    <h2 class="footer__top__content__desc">Sản phẩm an toàn</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col c-6 l-3 m-6">
+                            <div class="footer__top__content">
+                                <div class="footer__top__content--modify">
+                                    <img class="footer__top__content__image" src="./assets/img/footer/top/2.png" alt=""
+                                        srcset="">
+                                    <h2 class="footer__top__content__desc">Chất lượng cam kết</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col c-6 l-3 m-6">
+                            <div class="footer__top__content">
+                                <div class="footer__top__content--modify">
+                                    <img class="footer__top__content__image" src="./assets/img/footer/top/3.png" alt=""
+                                        srcset="">
+                                    <h2 class="footer__top__content__desc">Dịch vụ vượt trội</h2>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col c-6 l-3 m-6">
+                            <div class="footer__top__content">
+                                <div class="footer__top__content--modify">
+                                    <img class="footer__top__content__image" src="./assets/img/footer/top/4.png" alt=""
+                                        srcset="">
+                                    <h2 class="footer__top__content__desc">Giao hàng nhanh chóng</h2>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="footer__center--modify">
+                <div class="grid wide" id="footer__center">
+                    <div class="row no-gutters">
+                        <div class="col l-3 c-0 m-6">
+                            <div class="footer__center__content">
+                                <img src="" alt="" class="footer__center__content__image">
+                                <p class="footer__center__content__text">Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp
+                                    VinCommerce
+                                </p>
+                                <p class="footer__center__content__text">MSDN: 0104918404 do Sở Kế hoạch và Đầu tư TP.
+                                    Hà
+                                    Nội
+                                    cấp lần đầu ngày 20/09/2010
+
+                                </p>
+                                <p class="footer__center__content__text">Đăng ký thay đổi lần thứ 42 do Sở Kế hoạch Đầu
+                                    tư
+                                    TP.
+                                    Hồ Chí Minh ngày 13/02/2020
+                                </p>
+                                <img src="./assets/img/footer/center/branch.png" alt=""
+                                    class="footer__center__content__branch">
+                            </div>
+                        </div>
+
+                        <div class="col l-3 c-6 m-6">
+                            <div class="footer__center__content footer__center__content--modify">
+                                <h4 class="footer__center__content--modify__intro">Về chúng tôi</h4>
+                                <ul class="footer__center__content--modify__list">
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Giới thiệu</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Danh sách</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Quản lý chất
+                                            lượng</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Điều khoản và điều
+                                            kiện</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Chính sách bảo mật
+                                            và
+                                            chi
+                                            sẻ thông tin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 c-6 m-6">
+                            <div class="footer__center__content footer__center__content--modify">
+                                <p class="footer__center__content--modify__intro">Về chúng tôi</p>
+                                <ul class="footer__center__content--modify__list">
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Giới thiệu</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Danh sách</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Quản lý chất
+                                            lượng</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Điều khoản và điều
+                                            kiện</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Chính sách bảo mật
+                                            và
+                                            chi
+                                            sẻ thông tin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 c-6 m-6">
+                            <div class="footer__center__content footer__center__content--modify">
+                                <p class="footer__center__content--modify__intro">Về chúng tôi</p>
+                                <ul class="footer__center__content--modify__list">
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Giới thiệu</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Danh sách</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Quản lý chất
+                                            lượng</a>
+                                    </li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Điều khoản và điều
+                                            kiện</a></li>
+                                    <li class="footer__center__content--modify__list__item"><a href=""
+                                            class="footer__center__content--modify__list__item__link">Chính sách bảo mật
+                                            và
+                                            chi
+                                            sẻ thông tin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="footer__bottom--modify">
+                <div class="grid wide" id="footer__bottom">
+                    <div class="footer__bottom__wrapper">
+                        <div class="row no-gutters">
+                            <div class="c-6 m-6 l-4">
+                                <div class="footer__bottom__content">
+                                    <h3 class="footer__bottom__content__title">
+                                        Trụ sở chính:
+                                    </h3>
+
+                                    <p class="footer__bottom__content__desc">Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp
+                                        VinCommerce
+                                        Tầng 5, Mplaza SaiGon, 39 Lê Duẩn, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí
+                                        Minh,
+                                        Việt Nam.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="c-6 m-6 l-4">
+                                <div class="footer__bottom__content">
+                                    <h3 class="footer__bottom__content__title">
+                                        Trụ sở chính:
+                                    </h3>
+
+                                    <p class="footer__bottom__content__desc">Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp
+                                        VinCommerce
+                                        Tầng 5, Mplaza SaiGon, 39 Lê Duẩn, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí
+                                        Minh,
+                                        Việt
+                                        Nam.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="c-0-6 m-12 l-4">
+                                <div class="footer__bottom__content">
+                                    <h3 class="footer__bottom__content__title">
+                                        Trụ sở chính:
+                                    </h3>
+
+                                    <p class="footer__bottom__content__desc">Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp
+                                        VinCommerce
+                                        Tầng 5, Mplaza SaiGon, 39 Lê Duẩn, Phường Bến Nghé, Quận 1, Thành Phố Hồ Chí
+                                        Minh,
+                                        Việt
+                                        Nam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+
+
+        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
+</body>
+
+</html>

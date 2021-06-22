@@ -1,0 +1,124 @@
+:root {
+  --blue-1: #88bbf1;
+  --blue-2: rgb(211, 238, 255);
+  --orange-1: #ff0000;
+  --orange-2: #ff542e;
+  --orange-3: #dd3726;
+  --purple-pink: #f4364c;
+  --purple-pink-2: #e63348;
+  --purple-pink-3: #e2b9b9;
+  --purple-pink-1:#ef8692;
+  --purple-pink-4:rgb(255, 241, 241);
+  --gray-1: #f6f6f6;
+  --gray-2: rgb(153, 153, 153);
+  --gray-3: #8b8b8b;
+  --gray-4: #dbdbdb;
+  --gray-5: #b1a5a5;
+  --gray-6: #f1f0f1;
+  --gray-7: #f8f9fa;
+  --gray-8: #8b8b8b;
+  --gray-9: rgb(238, 238, 238);
+  --white: white;
+  --white-1:#fff;
+  --black: black;
+  --black-1: #2c2c2c;
+  --black-2: hsla(0,0%,54.5%,.1);
+  --gold-1: #ffce3e;
+  --gold-2: rgb(253, 216, 54);
+  --yellow-1: rgb(252, 248, 228);
+  --green-1:rgb(231, 248, 241);
+  --header-height: 120px;
+  --navbar-height: 40px;
+  --header_top: calc(var(--header-height) - var(--navbar-height));
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+}
+
+.p-top-10{
+  padding-top: 10px;
+}
+
+.p-right-10{
+  padding-right: 10px;
+}
+
+.mg-buttom-0{
+  margin-bottom: 0;
+}
+.mg-top-10{
+  margin-top: 10px;
+}
+
+.mg-bottom-10{
+  margin-bottom: 10px;
+}
+
+.mg-left-10{
+  margin-left: 10px;
+}
+
+.mg-right-10{
+  margin-right: 10px;
+}
+
+.pd-10{
+  padding:10px;
+}
+
+.mg-top-bottom-4{
+  margin: 4px 0;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* Hack ~ 16px */
+  font-size: 62.5%; /* ~ 10px*/
+  line-height: 1.6rem;
+  /* sans-serif: chủng chứ không có chân */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/* ==============================================================
+                        Preloader
+================================================================= */
+
+/* ---------------Overlay flud screen----------------- */
+/* #preloader { 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+} 
+
+#status {
+  background-image: url(../img/);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+} */
+/* ==============================================================
+                        End Preloader
+================================================================= */
